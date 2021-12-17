@@ -9,7 +9,7 @@ from .serializers import ShoppingCartSerializer
 from django.contrib.auth.models import User
 
 # Create your views here.
-class ProductList(APIView):
+class ShoppingCartList(APIView):
     
     permission_classes=[AllowAny]
     
@@ -27,7 +27,7 @@ class ProductList(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class ProductDetail(APIView):
+class ShoppingCartDetail(APIView):
     
     permission_classes = [AllowAny]
 
