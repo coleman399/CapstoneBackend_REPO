@@ -38,7 +38,6 @@ class ProductDetail(APIView):
         except Product.DoesNotExist:
             raise Http404
     
-    permission_classes = [AllowAny]
 
     #get by id
     def get(self, request, pk):
@@ -46,7 +45,6 @@ class ProductDetail(APIView):
         serializer = ProductSerializer(product)
         return Response(serializer.data)
     
-    permission_classes = [AllowAny]
 
     #update
     def put(self, request, pk):
@@ -57,7 +55,6 @@ class ProductDetail(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-    permission_classes = [AllowAny]
 
     #delete
     def delete(self, request, pk):
