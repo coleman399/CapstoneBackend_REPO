@@ -1,2 +1,1 @@
-# CapstoneBackend_REPO
-devCodeCamp Assignment
+# drf_jwt_capstone_backend
