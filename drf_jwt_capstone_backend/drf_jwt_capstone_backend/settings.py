@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication.apps.AuthenticationConfig',
     'corsheaders',
-    'products'
+    'products',
+    'shopping_carts.apps.ShoppingCartsConfig',
 ]
 
 MIDDLEWARE = [
