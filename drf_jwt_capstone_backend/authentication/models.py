@@ -13,11 +13,5 @@ class Role(models.Model):
     RoleName = models.TextChoices('RoleName','Customer Administrator')
     role=models.CharField(max_length=15, blank=True, choices=RoleName.choices)
     
-    def __str__(self):
-        return self.role
-
 class User(AbstractUser):
-    role_name = models.ManyToManyField(Role)
-
-    def __str__(self):
-        return self.role_name
+    role_name = models.ManyToManyField(Role, blank=True)
