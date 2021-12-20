@@ -17,7 +17,7 @@ class RegisterView(generics.CreateAPIView):
 
 class UserView(APIView):
 
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
     def get(self,request):
         users = User.objects.all()
@@ -26,7 +26,7 @@ class UserView(APIView):
 
 class UserDetail(APIView):
 
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
     def get_object(self,pk):
         try:
