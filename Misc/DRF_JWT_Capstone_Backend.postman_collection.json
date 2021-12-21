@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"coleman3999\",\r\n    \"password\": \"army4280\",\r\n    \"email\": \"dillonn@devcodecamp.com\",\r\n    \"first_name\": \"dillon\",\r\n    \"last_name\": \"coleman\",\r\n    \"is_staff\": \"True\"\r\n}",
+							"raw": "{\r\n    \"username\": \"customer1\",\r\n    \"password\": \"customer1\",\r\n    \"email\": \"customer1@gmail.com\",\r\n    \"first_name\": \"customer1\",\r\n    \"last_name\": \"Customer1\",\r\n    \"is_staff\": \"false\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -49,7 +49,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"coleman3999\",\r\n    \"password\": \"army4280\"\r\n}",
+							"raw": "{\r\n    \"username\": \"customer1\",\r\n    \"password\": \"customer1\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -105,6 +105,137 @@
 								"auth",
 								"login",
 								"refresh",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQwODg3MDE2LCJpYXQiOjE2NDAwMjMwMTYsImp0aSI6ImRkNTBhMGMzOTc2MjRiZTZhOTIwMzUwODVlODI5OGViIiwidXNlcl9pZCI6Mn0.Arc4v9xg0vxBGFi14r0BcuAsOXF3Lw1nFZ5QGaf7Xpw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQwNjM4MzA4LCJpYXQiOjE2Mzk3NzQzMDgsImp0aSI6IjNjNTQ2YzcyMGI0MTQ3YmU4MmU3MmMyYzQ1OGU0NzBkIiwidXNlcl9pZCI6NH0.EjFlan1CPjkjg55Y3cvpotpRKx2O939UrqMBO8-3TDg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQwNjM4MzA4LCJpYXQiOjE2Mzk3NzQzMDgsImp0aSI6IjNjNTQ2YzcyMGI0MTQ3YmU4MmU3MmMyYzQ1OGU0NzBkIiwidXNlcl9pZCI6NH0.EjFlan1CPjkjg55Y3cvpotpRKx2O939UrqMBO8-3TDg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"dillon\",\r\n    \"password\": \"army4280\",\r\n    \"email\": \"coleman399@gmail.com\",\r\n    \"first_name\": \"dillon\",\r\n    \"last_name\": \"coleman\",\r\n    \"is_staff\": \"True\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQwNjM4MzA4LCJpYXQiOjE2Mzk3NzQzMDgsImp0aSI6IjNjNTQ2YzcyMGI0MTQ3YmU4MmU3MmMyYzQ1OGU0NzBkIiwidXNlcl9pZCI6NH0.EjFlan1CPjkjg55Y3cvpotpRKx2O939UrqMBO8-3TDg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/3/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"3",
 								""
 							]
 						}
@@ -270,10 +401,19 @@
 				{
 					"name": "Get Products",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQwODg3MDE2LCJpYXQiOjE2NDAwMjMwMTYsImp0aSI6ImRkNTBhMGMzOTc2MjRiZTZhOTIwMzUwODVlODI5OGViIiwidXNlcl9pZCI6Mn0.Arc4v9xg0vxBGFi14r0BcuAsOXF3Lw1nFZ5QGaf7Xpw",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://127.0.01:8000/api/products",
+							"raw": "http://127.0.01:8000/api/products/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -283,7 +423,8 @@
 							"port": "8000",
 							"path": [
 								"api",
-								"products"
+								"products",
+								""
 							]
 						}
 					},
@@ -319,7 +460,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Watermelon\",\r\n    \"description\": \"Juicy Fruit\",\r\n    \"salesPrice\": \"15.00\",\r\n    \"manfactureringCost\": \"20.00\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Watermelon\",\r\n    \"description\": \"Juicy Fruit\",\r\n    \"salesPrice\": \"15.00\",\r\n    \"manfactureringCost\": \"20.00\",\r\n    \"aisleName\": \"Food\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -376,7 +517,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Peaches\",\r\n    \"description\": \"Fruit\",\r\n    \"salesPrice\": \"8.00\",\r\n    \"manufactureringCost\": \"3.00\",\r\n    \"aisleName\": []\r\n}",
+							"raw": "{\r\n    \"name\": \"Watermelon\",\r\n    \"description\": \"Fruit\",\r\n    \"salesPrice\": \"8.00\",\r\n    \"manufactureringCost\": \"3.00\",\r\n    \"aisleName\": \"Food\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -435,7 +576,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.01:8000/api/shoppingcarts/1",
+							"raw": "http://127.0.01:8000/api/shoppingcarts/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -446,7 +587,7 @@
 							"path": [
 								"api",
 								"shoppingcarts",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -459,13 +600,37 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": \"1\",\r\n    \"products\": [\r\n        3\r\n    ],\r\n    \"quantity\": 4\r\n}",
+							"raw": "{\r\n    \"user\": \"1\",\r\n    \"product\": \"1\",\r\n    \"quantity\": 4\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
+						"url": {
+							"raw": "http://127.0.01:8000/api/shoppingcarts/2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"01"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"shoppingcarts",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Shopping Cart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
 						"url": {
 							"raw": "http://127.0.01:8000/api/shoppingcarts/1/",
 							"protocol": "http",
@@ -486,37 +651,13 @@
 					"response": []
 				},
 				{
-					"name": "Delete Shopping Cart",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://127.0.01:8000/api/shoppingcarts/4/",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"01"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"shoppingcarts",
-								"4",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Post Shopping Cart",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": \"1\",\r\n    \"products\": [\r\n         4, \r\n         3\r\n    ],\r\n    \"quanitity\": 5\r\n}",
+							"raw": "{\r\n    \"user\": \"1\",\r\n    \"product\": \"1\",\r\n    \"quanitity\": 5\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
