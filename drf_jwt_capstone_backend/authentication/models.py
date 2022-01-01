@@ -9,4 +9,4 @@ from django.contrib.auth.models import AbstractUser
 # 1. python manage.py makemigrations
 # 2. python manage.py migrate
 class User(AbstractUser):
-    pass
+    salary = models.DecimalField(max_digits=19, decimal_places=2, null=True, blank=True)

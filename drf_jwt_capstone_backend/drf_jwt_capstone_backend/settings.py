@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'authentication.apps.AuthenticationConfig',
+    'shopping_carts.apps.ShoppingCartsConfig',
     'corsheaders',
     'products',
-    'shopping_carts.apps.ShoppingCartsConfig',
-    'budgets.apps.BudgetsConfig',
+    'budgets',
 ]
 
 MIDDLEWARE = [
@@ -151,7 +151,7 @@ SIMPLE_JWT = {
 
     'AUTH_HEADER_TYPES': ('Bearer',),
     'USER_ID_FIELD': 'id',
-    'USER_ID_CLAIM': 'user_id',
+    'USER_ID_CLAIM': 'employee_id',
 
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM': 'token_type',
