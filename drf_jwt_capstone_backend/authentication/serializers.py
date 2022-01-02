@@ -5,8 +5,7 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class RegistrationSerializer(serializers.ModelSerializer):
-    email = serializers.EmailField(required=True, validators=[
-                                   UniqueValidator(queryset=User.objects.all())])
+    email = serializers.EmailField(required=True)
 
     password = serializers.CharField(
         write_only=True, required=True, validators=[validate_password])
@@ -15,7 +14,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
         model = User
         # If added new columns through the User model, add them in the fields
         # list as seen below
-        fields = ('employee_id', 'password', 'email',
+        fields = ('id','employee_id', 'password', 'email',
                   'first_name', 'last_name','is_staff', 'salary')
 
     def create(self, validated_data):

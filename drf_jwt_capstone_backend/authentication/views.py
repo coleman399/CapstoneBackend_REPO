@@ -25,7 +25,6 @@ class UserView(APIView):
         return Response(serializer.data)
 
 class UserDetail(APIView):
-
     permission_classes = [IsAuthenticated]
 
     def get_object(self,pk):
