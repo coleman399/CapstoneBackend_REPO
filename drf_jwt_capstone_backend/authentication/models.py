@@ -10,3 +10,5 @@ from django.contrib.auth.models import AbstractUser
 # 2. python manage.py migrate
 class User(AbstractUser):
     salary = models.DecimalField(max_digits=19, decimal_places=2, null=True, blank=True)
+    spent = models.DecimalField(max_digits=19, decimal_places=2, null=True, blank=True)
+    userPassword = models.CharField(max_length=20, blank=True, null=True)
